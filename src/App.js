@@ -1,5 +1,6 @@
 import './App.css';
 import React, { useState } from "react";
+import Componente from './Componente';
 
 function Login() {
   const [email, setEmail] = useState("");
@@ -14,7 +15,7 @@ function Login() {
   return (
     
     <div className="login-container">
-      <h1 className="login-heading">Login</h1>
+      <Componente/>
       <form onSubmit={handleSubmit} className="login-form">
         <label className="login-label">
           Email:
@@ -27,7 +28,7 @@ function Login() {
           />
         </label>
         <label className="login-label">
-          Password:
+          Senha:
           <input
             type="password"
             value={password}
